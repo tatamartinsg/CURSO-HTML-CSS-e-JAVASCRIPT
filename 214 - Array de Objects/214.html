@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 214</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        var produtos = [
+            {"nome": "Caneta", "preco": 2,},
+            {"nome": "Lápis","preco":1.2}, 
+            {"nome":"Borracha","preco": 0.5}
+        ]
+
+        var msg = '';
+        var output = document.querySelector('div#output')
+        for (var i = 0 ; i < produtos.length; i++)
+        {
+            console.log(produtos[i].preco)
+            msg += `<h2>Produto[${i+1}]: ${produtos[i].nome} </h2>`
+            msg += `<p>Preço: R$ ${produtos[i].preco}</p>`
+        }
+
+        output.innerHTML = msg
+    </script>
+</body>
+</html>

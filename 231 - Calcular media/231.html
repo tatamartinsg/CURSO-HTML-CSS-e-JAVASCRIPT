@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercício Calculando Média</h1>
+    <script>
+        function calculamedia()
+        {
+            var qntd_parametro= 0
+            var soma = 0
+            var media = 0
+            
+            for(var i = 0; i< arguments.length;i++)
+            {
+                qntd_parametro += 1
+                // console.log('x:'+x)
+                soma += arguments[i]
+                media = soma/qntd_parametro
+                console.log(arguments[i])
+            }
+            console.log("qntd_parametro: "+ qntd_parametro)
+            console.log("soma: "+ soma)
+            console.log("media: "+ media)
+        }
+        calculamedia(1,1,2,3,5)
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <h1>Calculando IMC</h1>
+    
+    <button onclick="peso_altura()">Calcular IMC</button>
+
+    <div class="output"></div>
+    <script>
+        var peso;
+        var altura;
+        var IMC = 0;
+        var output = document.querySelector('div.output')
+        var msg = ''
+        function peso_altura()
+        {
+            peso = Number(window.prompt("Qual é seu peso?"))
+            altura = Number(window.prompt("Qual é sua altura?")) 
+            IMC = (peso/(Math.pow(altura,2)))
+            console.log(IMC)
+            if(IMC < 18.5)
+            {
+                msg = '<mark>MAGREZA</mark>'
+                output.innerHTML = msg
+            }
+            
+            else if((18.5<IMC) && (IMC <=24.9))
+            {
+                msg = '<mark>NORMAL</mark>'
+                output.innerHTML = msg
+            }
+            else if((25<=IMC) && (IMC <=29.9))
+            {
+                msg = '<mark>SOBREPESO</mark>'
+                output.innerHTML = msg
+            }
+            else if((30<=IMC) && (IMC <=39.9))
+            {
+                msg = '<mark>OBESIDADE</mark>'
+                output.innerHTML = msg
+            }
+            else if(40<=IMC)
+            {
+                msg = '<mark>OBESIDADE GRAVE</mark>'
+                output.innerHTML = msg
+            }
+        }
+      //PEGUEI INFORMACOES DO SITE https://www.programasaudefacil.com.br/calculadora-de-imc
+        // calcula_IMC()
+    </script>
+</body>
+</html>

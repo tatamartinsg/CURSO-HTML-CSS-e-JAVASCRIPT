@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 210</title>
+</head>
+<body>
+    <h1>Exercício Proposto</h1>
+    <div id="output">
+
+    </div>
+
+    <script>
+        var soma = 0
+        var outuput = document.querySelector('div#output')
+        var arr = new Array(25,30,45,28,0,12,78,64)
+        console.log(arr.length)
+        for(var i = 0; i < arr.length; i++)
+        {
+            if(arr[i] % 2 == 0)
+            {
+                soma = soma + arr[i]
+            }
+        }
+        outuput.innerHTML = soma;
+
+    </script>
+</body>
+</html>
