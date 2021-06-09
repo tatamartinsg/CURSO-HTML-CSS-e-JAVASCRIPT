@@ -1,0 +1,90 @@
+body{
+    font-family: verdana;
+    background-color: #ccc;
+    margin: 0;
+}
+
+.hero{
+    background-image: url(../imagens/bg-3.jpg);
+    height: 500px;
+    background-position:right center;
+    background-size: cover;
+    border-top: 1px solid transparent;
+
+}
+.hero-content{
+    text-align: center;
+    color: white;
+    text-shadow: black 1px 2px 5px;
+    margin-top: 150px;
+}
+
+
+.hero-content h1{
+    text-transform: uppercase;
+    font-size: 46px;
+
+}
+.hero nav ul{
+    text-align: right;
+    margin: 20px 20px 0 0;
+    
+    
+}
+
+.hero nav li{
+    display: inline-block;
+    list-style: none;
+    border: 1px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.hero nav a{
+    display: block;
+    background-color: rgb(128, 128, 128) ;
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.hero nav a:hover{
+    background: rgba(0,0,0,0.5);
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.cardes{
+    border: solid 8px white;
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    
+}
+
+.h2-content{
+    background-color:#ccc;
+} 
+footer{
+    text-align: center;
+    background-color: rgb(105, 102, 102);
+    margin-top: 14px;
+    padding: 10px;
+}
+
+.aprenda{
+    background-color: black;
+    display: inline-block;
+    padding: 15px ;
+    border-bottom: solid 3px white;
+
+}
+
+.card{
+    width: 33%;
+    display: inline-block;
+}
